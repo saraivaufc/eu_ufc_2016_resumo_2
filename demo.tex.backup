@@ -1,0 +1,133 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+
+% ---
+% PACOTES
+% --
+\usepackage[alf]{abntex2cite}		% Citações padrão ABNT
+\usepackage[brazil]{babel}		    % Idioma do documento
+\usepackage{color}			       % Controle das cores
+\usepackage[T1]{fontenc}		  % Selecao de codigos de fonte.
+\usepackage{graphicx}			    % Inclusão de gráficos
+\usepackage[utf8]{inputenc}		   % Codificacao do documento (conversão automática dos acentos)
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage[capposition=top]{floatrow}
+\usepackage{txfonts}			 % Fontes virtuais
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\usepackage{lipsum}
+\usepackage{amssymb}
+% ---
+
+% ---
+% Minhas Definições
+% ---
+
+%Deixando o Caption alinhado a esquerda mesmo com quebra de linha
+\usepackage[labelfont=bf, justification=justified,singlelinecheck=true]{caption}
+
+%Justificando o corpo do texto
+\renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm} 
+
+% Colocando numero de paginas no slide
+\setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{caption}[numbered]{}
+
+
+
+
+\title{AskMath}
+\subtitle{Um Ambiente Virtual de Aprendizagem para Auxiliar no Processo de Ensino e Aprendizagem de Matem\'atica}
+\date{\today}
+% \date{}
+\author{Marciano Saraiva e Samy Soares}
+\institute{Universidade Federal do Cear\'a - Campus de Quixad\'a}
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Roteiro}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Sobre}
+
+%% ----------------- NOVO SLIDE --------------------------------
+\begin{frame}{Sobre}
+
+\begin{figure}[H]
+  \centering
+   \begin{minipage}[b]{0.25\textwidth}\end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.3\textwidth}
+	\includegraphics[width=\textwidth]{figuras/askmath.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.1\textwidth}
+    \includegraphics[width=\textwidth]{figuras/vs.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.3\textwidth}
+    \includegraphics[width=\textwidth]{figuras/petti.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.25\textwidth}\end{minipage}
+\end{figure}
+
+O AskMath é uma iniciativa do grupo PET–Tecnologia da Informação e objetiva prover uma plataforma de ensino para auxiliar estudantes do 
+ensino médio e superior em seu processo de aprendizagem de Matemática.
+
+\end{frame}
+%% ----------------- NOVO SLIDE --------------------------------
+\begin{frame}{Motivação}
+
+\begin{itemize}
+	\item Grande número de reprovações e desistências em turmas iniciais de Matemática de cursos na Universidade Federal do Ceará - Campus 
+Quixadá.
+	\item A Organização para Cooperação e Desenvolvimento Econômico(OECD) revelou que em 2015, 67.1\% do alunos brasileiros estavam abaixo 
+do nível 2 (os níveis vão de 1 a 6) de proficiência em matemática na escala do PISA \cite{pisainfocus2016}.
+\end{itemize}
+
+\end{frame}
+
+
+%% ----------------- NOVO SLIDE --------------------------------
+\begin{frame}{Definição e Necessidades do Público-alvo}
+
+\begin{itemize}
+	\item Estudantes do ensino médio que sentem a necessidade de uma ferramenta para praticar o conhecimento adquirido nas aulas de 
+matemática.
+	\item Estudantes recém ingressantes no ensino superior, que possuem deficiência de matemática em sua formação desde o ensino médio e 
+necessitam relembrar alguns conteúdos de matemática.
+	\item Professores de  disciplina de Matemática que desejam acompanhar o andamento de sua turma.
+\end{itemize}
+
+\end{frame}
+
+
+
+% ----------------- NOVO SLIDE --------------------------------
+\begin{frame}[allowframebreaks]{Refer\^encias}
+
+  \bibliography{demo}
+  \bibliographystyle{abbrv}
+
+\end{frame}
+
+\end{document}
