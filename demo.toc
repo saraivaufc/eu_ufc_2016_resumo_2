@@ -6,4 +6,3 @@
 \beamer@sectionintoc {4}{Ferramentas Utilizadas}{9}{0}{4}
 \beamer@sectionintoc {5}{Cria\IeC {\c c}\IeC {\~a}o das Videoaulas}{11}{0}{5}
 \beamer@sectionintoc {6}{P\IeC {\'u}blica\IeC {\c c}\IeC {\~a}o do Conte\IeC {\'u}do}{13}{0}{6}
-\beamer@sectionintoc {7}{Li\IeC {\c c}\IeC {\~o}es Aprendidas}{15}{0}{7}
